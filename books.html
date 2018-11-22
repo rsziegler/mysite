@@ -3,33 +3,23 @@
   <head>
     <title>um</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src = "script.js"></script>
+
   </head>
     <body>
       <ul>
         <li><a href="main.html">taylor ziegler</a></li>
         <li><a href="books.html">books</a></li>
         <li><a href="code.html">code</a></li>
+        <li id = "el">
+          <input type="text" value="" id="searchTerm" placeholder="search..."/>
+          <button id = "searchButton" onclick="loadSearchResults()" >go</button>
+          </li>
       </ul>
-      <ul id = "reviewbox">
-        <li><img src="books/weregrettoinformyou.jpg" alt="We Regret to Inform You by Ariel Kaplan" length=104px height=159px></li>
-        <li><p id = "review">
-          <b>We Regret to Inform You by Ariel Kaplan<br/></b>
-          yes i do plan to hard code every review thank you very much
-        </p></li>
-      </ul>
-      <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-      <script>
-      //$.getJSON( "reviews.json", function( data ) {
-        var items = [];
-        $.each( data, function( key, val ) {
-          items.push( "<li id='" + key + "'>" + val + "</li>" );
-        });
-
-        $( "<ul/>", {
-          "class": "my-new-list",
-          html: items.join( "" )
-        }).appendTo( "body" );
-      });
-      </script>
+      <div id = "reviewcontainer">
+      </div>
+      <button id = "return" onclick = "loadStandardReviews()">return</button>
+      <script>loadStandardReviews()</script>
     </body>
 </html>

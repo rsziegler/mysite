@@ -1,7 +1,17 @@
 [
    {
-     "review": "so um basically",
-     "tags:": ["we regret to inform you", "ariel kaplan", "college", "data security"]
+     "book": "we regret to inform you",
+     "author": "ariel kaplan",
+     "tags": ["we regret to inform you", "ariel kaplan", "college", "data security"],
+     "imgsrc": "books/weregrettoinformyou.jpg",
+     "review": "make a list? no thanks."
    },
+   {
+     "book": "the martian",
+     "author": "andy weir",
+     "tags": ["the martian", "andy weir", "mars", "survival", "science"],
+     "imgsrc": "books/weregrettoinformyou.jpg",
+     "review": "make a list? no thanks."
+   }
 
  ]
